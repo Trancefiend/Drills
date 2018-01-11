@@ -1,6 +1,7 @@
 SELECT 
-	min(MinTemperatureF)
+	MinTemperatureF
 FROM 
 	weather
 WHERE
-	ZIP = 94301
+	ZIP = 94301 AND 
+	events LIKE 'Rain'
